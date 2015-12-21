@@ -6,7 +6,7 @@ php:
 
 before_script:
     - composer self-update -n
-    - composer install --prefer-dist -n
+    - composer install -d src --prefer-dist -n
 
 after_success:
     - src/vendor/bin/rocketeer deploy
